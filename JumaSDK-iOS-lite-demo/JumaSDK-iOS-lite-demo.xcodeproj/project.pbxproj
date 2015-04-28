@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F862CA91AEF302C000E976F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CA81AEF302C000E976F /* main.m */; };
+		6F862CAC1AEF302C000E976F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CAB1AEF302C000E976F /* AppDelegate.m */; };
+		6F862CAF1AEF302C000E976F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CAE1AEF302C000E976F /* ViewController.m */; };
+		6F862CB21AEF302C000E976F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB01AEF302C000E976F /* Main.storyboard */; };
+		6F862CB41AEF302C000E976F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB31AEF302C000E976F /* Images.xcassets */; };
+		6F862CB71AEF302C000E976F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB51AEF302C000E976F /* LaunchScreen.xib */; };
+		6F862CC31AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */; };
+		6F8CE5AE1AEF70D300D0D501 /* libJumaDeviceManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */; };
+		6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F862CBD1AEF302C000E976F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F862C9B1AEF302C000E976F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F862CA21AEF302C000E976F;
+			remoteInfo = "JumaSDK-iOS-lite-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6F862CA31AEF302C000E976F /* JumaSDK-iOS-lite-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JumaSDK-iOS-lite-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F862CA71AEF302C000E976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F862CA81AEF302C000E976F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6F862CAA1AEF302C000E976F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6F862CAB1AEF302C000E976F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6F862CAD1AEF302C000E976F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6F862CAE1AEF302C000E976F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6F862CB11AEF302C000E976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F862CB31AEF302C000E976F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6F862CB61AEF302C000E976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6F862CBC1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JumaSDK-iOS-lite-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F862CC11AEF302C000E976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumaSDK_iOS_lite_demoTests.m; sourceTree = "<group>"; };
+		6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJumaDeviceManager.a; sourceTree = "<group>"; };
+		6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6FD8074D1AEF67D000441E79 /* JumaDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumaDeviceManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F862CA01AEF302C000E976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */,
+				6F8CE5AE1AEF70D300D0D501 /* libJumaDeviceManager.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F862CB91AEF302C000E976F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F862C9A1AEF302C000E976F = {
+			isa = PBXGroup;
+			children = (
+				6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */,
+				6F862CA51AEF302C000E976F /* JumaSDK-iOS-lite-demo */,
+				6F862CBF1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests */,
+				6F862CA41AEF302C000E976F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F862CA41AEF302C000E976F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F862CA31AEF302C000E976F /* JumaSDK-iOS-lite-demo.app */,
+				6F862CBC1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F862CA51AEF302C000E976F /* JumaSDK-iOS-lite-demo */ = {
+			isa = PBXGroup;
+			children = (
+				6FD8074C1AEF67D000441E79 /* JumaDeviceManager */,
+				6F862CAA1AEF302C000E976F /* AppDelegate.h */,
+				6F862CAB1AEF302C000E976F /* AppDelegate.m */,
+				6F862CAD1AEF302C000E976F /* ViewController.h */,
+				6F862CAE1AEF302C000E976F /* ViewController.m */,
+				6F862CB01AEF302C000E976F /* Main.storyboard */,
+				6F862CB31AEF302C000E976F /* Images.xcassets */,
+				6F862CB51AEF302C000E976F /* LaunchScreen.xib */,
+				6F862CA61AEF302C000E976F /* Supporting Files */,
+			);
+			path = "JumaSDK-iOS-lite-demo";
+			sourceTree = "<group>";
+		};
+		6F862CA61AEF302C000E976F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F862CA71AEF302C000E976F /* Info.plist */,
+				6F862CA81AEF302C000E976F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F862CBF1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */,
+				6F862CC01AEF302C000E976F /* Supporting Files */,
+			);
+			path = "JumaSDK-iOS-lite-demoTests";
+			sourceTree = "<group>";
+		};
+		6F862CC01AEF302C000E976F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6F862CC11AEF302C000E976F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6FD8074C1AEF67D000441E79 /* JumaDeviceManager */ = {
+			isa = PBXGroup;
+			children = (
+				6FD8074D1AEF67D000441E79 /* JumaDeviceManager.h */,
+				6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */,
+			);
+			path = JumaDeviceManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F862CA21AEF302C000E976F /* JumaSDK-iOS-lite-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F862CC61AEF302C000E976F /* Build configuration list for PBXNativeTarget "JumaSDK-iOS-lite-demo" */;
+			buildPhases = (
+				6F862C9F1AEF302C000E976F /* Sources */,
+				6F862CA01AEF302C000E976F /* Frameworks */,
+				6F862CA11AEF302C000E976F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JumaSDK-iOS-lite-demo";
+			productName = "JumaSDK-iOS-lite-demo";
+			productReference = 6F862CA31AEF302C000E976F /* JumaSDK-iOS-lite-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F862CBB1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F862CC91AEF302C000E976F /* Build configuration list for PBXNativeTarget "JumaSDK-iOS-lite-demoTests" */;
+			buildPhases = (
+				6F862CB81AEF302C000E976F /* Sources */,
+				6F862CB91AEF302C000E976F /* Frameworks */,
+				6F862CBA1AEF302C000E976F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F862CBE1AEF302C000E976F /* PBXTargetDependency */,
+			);
+			name = "JumaSDK-iOS-lite-demoTests";
+			productName = "JumaSDK-iOS-lite-demoTests";
+			productReference = 6F862CBC1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F862C9B1AEF302C000E976F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Jumacc;
+				TargetAttributes = {
+					6F862CA21AEF302C000E976F = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6F862CBB1AEF302C000E976F = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 6F862CA21AEF302C000E976F;
+					};
+				};
+			};
+			buildConfigurationList = 6F862C9E1AEF302C000E976F /* Build configuration list for PBXProject "JumaSDK-iOS-lite-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F862C9A1AEF302C000E976F;
+			productRefGroup = 6F862CA41AEF302C000E976F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F862CA21AEF302C000E976F /* JumaSDK-iOS-lite-demo */,
+				6F862CBB1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F862CA11AEF302C000E976F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F862CB21AEF302C000E976F /* Main.storyboard in Resources */,
+				6F862CB71AEF302C000E976F /* LaunchScreen.xib in Resources */,
+				6F862CB41AEF302C000E976F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F862CBA1AEF302C000E976F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F862C9F1AEF302C000E976F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F862CAF1AEF302C000E976F /* ViewController.m in Sources */,
+				6F862CAC1AEF302C000E976F /* AppDelegate.m in Sources */,
+				6F862CA91AEF302C000E976F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F862CB81AEF302C000E976F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F862CC31AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F862CBE1AEF302C000E976F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F862CA21AEF302C000E976F /* JumaSDK-iOS-lite-demo */;
+			targetProxy = 6F862CBD1AEF302C000E976F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F862CB01AEF302C000E976F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F862CB11AEF302C000E976F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6F862CB51AEF302C000E976F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F862CB61AEF302C000E976F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F862CC41AEF302C000E976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F862CC51AEF302C000E976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F862CC71AEF302C000E976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JumaSDK-iOS-lite-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JumaSDK-iOS-lite-demo/JumaDeviceManager",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6F862CC81AEF302C000E976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JumaSDK-iOS-lite-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/JumaSDK-iOS-lite-demo/JumaDeviceManager",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6F862CCA1AEF302C000E976F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JumaSDK-iOS-lite-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumaSDK-iOS-lite-demo.app/JumaSDK-iOS-lite-demo";
+			};
+			name = Debug;
+		};
+		6F862CCB1AEF302C000E976F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JumaSDK-iOS-lite-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JumaSDK-iOS-lite-demo.app/JumaSDK-iOS-lite-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F862C9E1AEF302C000E976F /* Build configuration list for PBXProject "JumaSDK-iOS-lite-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F862CC41AEF302C000E976F /* Debug */,
+				6F862CC51AEF302C000E976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F862CC61AEF302C000E976F /* Build configuration list for PBXNativeTarget "JumaSDK-iOS-lite-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F862CC71AEF302C000E976F /* Debug */,
+				6F862CC81AEF302C000E976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F862CC91AEF302C000E976F /* Build configuration list for PBXNativeTarget "JumaSDK-iOS-lite-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F862CCA1AEF302C000E976F /* Debug */,
+				6F862CCB1AEF302C000E976F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F862C9B1AEF302C000E976F /* Project object */;
+}

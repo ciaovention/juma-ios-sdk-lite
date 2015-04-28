@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaK-gB-PQK">
+                                <rect key="frame" x="20" y="20" width="560" height="242"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3R-IN-4Yw">
+                                <rect key="frame" x="20" y="310" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Anjun" borderStyle="roundedRect" placeholder="Device Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XzL-pq-2Tn">
+                                <rect key="frame" x="20" y="272" width="480" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isZ-mP-b81">
+                                <rect key="frame" x="520" y="272" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="7Zz-4O-FWc"/>
+                                </constraints>
+                                <state key="normal" title="Scan">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7a-ra-kEb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mk-dH-zom">
+                                <rect key="frame" x="520" y="310" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="dgv-UC-Y0w"/>
+                                </constraints>
+                                <state key="normal" title="Send">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2xZ-e6-mUT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5mk-dH-zom" secondAttribute="trailing" constant="20" id="69C-6H-rUY"/>
+                            <constraint firstItem="XzL-pq-2Tn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="CJl-Sb-Wt6"/>
+                            <constraint firstAttribute="trailing" secondItem="isZ-mP-b81" secondAttribute="trailing" constant="20" id="DS4-3d-iYt"/>
+                            <constraint firstItem="e3R-IN-4Yw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="FXW-iV-RPa"/>
+                            <constraint firstItem="ZaK-gB-PQK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Hj1-EY-eM0"/>
+                            <constraint firstItem="isZ-mP-b81" firstAttribute="top" secondItem="ZaK-gB-PQK" secondAttribute="bottom" constant="10" id="JNk-uf-lRz"/>
+                            <constraint firstItem="isZ-mP-b81" firstAttribute="leading" secondItem="XzL-pq-2Tn" secondAttribute="trailing" constant="20" id="NK1-Hp-Gb7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5mk-dH-zom" secondAttribute="bottom" constant="260" id="Z3C-6b-Qbh"/>
+                            <constraint firstAttribute="trailing" secondItem="ZaK-gB-PQK" secondAttribute="trailing" constant="20" id="Znn-ov-EbJ"/>
+                            <constraint firstItem="ZaK-gB-PQK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="lLJ-A6-ji2"/>
+                            <constraint firstItem="5mk-dH-zom" firstAttribute="top" secondItem="isZ-mP-b81" secondAttribute="bottom" constant="8" id="oGz-oV-Pm1"/>
+                            <constraint firstItem="XzL-pq-2Tn" firstAttribute="centerY" secondItem="isZ-mP-b81" secondAttribute="centerY" id="oll-Ml-4mz"/>
+                            <constraint firstItem="5mk-dH-zom" firstAttribute="leading" secondItem="e3R-IN-4Yw" secondAttribute="trailing" constant="20" id="t8A-2v-SZX"/>
+                            <constraint firstItem="e3R-IN-4Yw" firstAttribute="centerY" secondItem="5mk-dH-zom" secondAttribute="centerY" id="yjy-1A-uD2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataField" destination="e3R-IN-4Yw" id="mnJ-eW-xoT"/>
+                        <outlet property="nameField" destination="XzL-pq-2Tn" id="GNf-p7-Emy"/>
+                        <outlet property="scanBtn" destination="isZ-mP-b81" id="hfJ-cv-Puk"/>
+                        <outlet property="sendBtn" destination="5mk-dH-zom" id="xqf-Tf-TxV"/>
+                        <outlet property="textView" destination="ZaK-gB-PQK" id="juC-qV-Ot5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
