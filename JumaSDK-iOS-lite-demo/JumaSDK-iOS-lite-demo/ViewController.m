@@ -54,6 +54,22 @@
     self.scanBtn.layer.borderColor = [UIColor colorWithRed:80/255.0 green:80/255.0 blue:80/255.0 alpha:0.3].CGColor;
     self.scanBtn.layer.borderWidth = 1;
     self.scanBtn.layer.cornerRadius = 5;
+    
+    [self.textView addObserver:self
+                    forKeyPath:@"text"
+                       options:NSKeyValueObservingOptionNew
+                       context:nil];
+}
+
+- (void)dealloc {
+    [self.textView removeObserver:self forKeyPath:@"text"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    
+    if (object == self.textView && [keyPath isEqualToString:@"text"]) {
+        [self.textView scrollRangeToVisible:NSMakeRange(self.textView.text.length - 1, 1)];
+    }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -62,6 +78,8 @@
     self.deviceManager = [[JumaDeviceManager alloc] init];
     self.deviceManager.delegate = self;
 }
+
+
 
 #pragma mark - JumaDeviceManagerDelegate
 

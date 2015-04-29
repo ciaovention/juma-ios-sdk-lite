@@ -14,8 +14,8 @@
 		6F862CB41AEF302C000E976F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB31AEF302C000E976F /* Images.xcassets */; };
 		6F862CB71AEF302C000E976F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB51AEF302C000E976F /* LaunchScreen.xib */; };
 		6F862CC31AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */; };
-		6F8CE5AE1AEF70D300D0D501 /* libJumaDeviceManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */; };
 		6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */; };
+		6FD354D61AF07C860070F524 /* libJumaDeviceManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD354D51AF07C860070F524 /* libJumaDeviceManager.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		6F862CBC1AEF302C000E976F /* JumaSDK-iOS-lite-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JumaSDK-iOS-lite-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F862CC11AEF302C000E976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumaSDK_iOS_lite_demoTests.m; sourceTree = "<group>"; };
-		6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJumaDeviceManager.a; sourceTree = "<group>"; };
 		6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		6FD354D51AF07C860070F524 /* libJumaDeviceManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJumaDeviceManager.a; sourceTree = "<group>"; };
 		6FD8074D1AEF67D000441E79 /* JumaDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumaDeviceManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FD354D61AF07C860070F524 /* libJumaDeviceManager.a in Frameworks */,
 				6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */,
-				6F8CE5AE1AEF70D300D0D501 /* libJumaDeviceManager.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				6FD8074D1AEF67D000441E79 /* JumaDeviceManager.h */,
-				6F8CE5AD1AEF70D300D0D501 /* libJumaDeviceManager.a */,
+				6FD354D51AF07C860070F524 /* libJumaDeviceManager.a */,
 			);
 			path = JumaDeviceManager;
 			sourceTree = "<group>";
@@ -367,14 +367,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "JumaSDK-iOS-lite-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JumaSDK-iOS-lite-demo/JumaDeviceManager",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3e275105-2610-4c5e-93c6-446ebcb7c2a9";
 			};
 			name = Debug;
 		};
@@ -382,6 +385,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				INFOPLIST_FILE = "JumaSDK-iOS-lite-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -390,6 +395,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "3e275105-2610-4c5e-93c6-446ebcb7c2a9";
 			};
 			name = Release;
 		};
