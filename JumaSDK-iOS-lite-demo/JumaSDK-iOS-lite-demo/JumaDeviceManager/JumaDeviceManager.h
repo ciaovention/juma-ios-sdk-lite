@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, JumaDeviceManagerState) {
 
 @property (nonatomic, weak) id<JumaDeviceManagerDelegate> delegate; 
 
-/** step 02, 扫描当前设备周围的其他设备, 目标设备的名字不能是 nil 和 @"" */
+/** step 02, 扫描当前设备周围的其他设备, 传入 nil 则扫描所有设备 */
 - (void)scanDeviceWithName:(NSString *)deviceName;
 - (void)stopScan;
 
