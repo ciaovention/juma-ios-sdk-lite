@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, JumaDeviceManagerState) {
 /** 主动断开连接 */
 - (void)disconnectDevice;
 
-/** step 06 向目标设备写入二进制数据 */
+/** step 06 向目标设备写入数据 */
 - (void)sendData:(NSData *)data;
 
 @end
@@ -52,13 +52,13 @@ typedef NS_ENUM(NSInteger, JumaDeviceManagerState) {
 /** step 03, 已经发现目标设备 */
 - (void)deviceManager:(JumaDeviceManager *)deviceManager didDiscoverDevice:(NSString *)deviceUUID name:(NSString *)deviceName RSSI:(NSNumber *)RSSI;
 
-/** step 05, 目标设备已经被发现 */
+/** step 05, 连接到设备 */
 - (void)deviceManager:(JumaDeviceManager *)deviceManager didConnectDevice:(NSString *)deviceUUID;
 - (void)deviceManager:(JumaDeviceManager *)deviceManager didFailToConnectDevice:(NSString *)deviceUUID error:(NSString *)error;
-/** 如果连接出错断开, error != nil, 否则 error == nil */
-- (void)deviceManager:(JumaDeviceManager *)deviceManager didDisconnectDevice:(NSString *)deviceUUID error:(NSString *)error;
+/** 如果连接出错断开, error != nil, 否则 error == nil. code 暂未实现 */
+- (void)deviceManager:(JumaDeviceManager *)deviceManager didDisconnectDevice:(NSString *)deviceUUID byRemote:(BOOL)byRemote code:(NSInteger)code error:(NSString *)error;
 
-/** step 08, 从目标设备接收到数据 */
+/** step 07, 接收目标设备返回的数据 */
 - (void)deviceManager:(JumaDeviceManager *)deviceManager didReceiveData:(NSData *)data error:(NSString *)error;
 
 @end
