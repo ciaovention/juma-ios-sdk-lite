@@ -105,6 +105,9 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     [self endEditing];
+    
+    
+    [self.deviceManager readRSSI];
 }
 
 - (IBAction)scan:(id)sender {
@@ -233,6 +236,8 @@
     
     self.textView.text = [self.textView.text stringByAppendingString:[NSString stringWithFormat:@"did connect device: %@\n", self.deviceName]];
     
+    [deviceManager readRSSI];
+    
     //    NSData *data = [@"text for test" dataUsingEncoding:NSUTF8StringEncoding];
     //    [deviceManager sendData:data];
 }
@@ -278,6 +283,11 @@
         NSLog(@"did get value : %@", data);
     }
     
+}
+
+- (void)deviceManager:(JumaDeviceManager *)deviceManager didReadRSSI:(NSNumber *)RSSI error:(NSString *)error {
+
+    NSLog(@" RSSI = %@", RSSI);
 }
 
 @end

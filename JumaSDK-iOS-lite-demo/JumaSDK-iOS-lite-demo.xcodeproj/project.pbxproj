@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		6F862CA91AEF302C000E976F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CA81AEF302C000E976F /* main.m */; };
 		6F862CAC1AEF302C000E976F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CAB1AEF302C000E976F /* AppDelegate.m */; };
-		6F862CAF1AEF302C000E976F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CAE1AEF302C000E976F /* ViewController.m */; };
 		6F862CB21AEF302C000E976F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB01AEF302C000E976F /* Main.storyboard */; };
 		6F862CB41AEF302C000E976F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB31AEF302C000E976F /* Images.xcassets */; };
 		6F862CB71AEF302C000E976F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F862CB51AEF302C000E976F /* LaunchScreen.xib */; };
 		6F862CC31AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */; };
 		6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */; };
-		6F9A7D391AF202B3006F43E1 /* libJumaDeviceManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F9A7D381AF202B3006F43E1 /* libJumaDeviceManager.a */; };
-		6F9A7D3E1AF20309006F43E1 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A7D3B1AF20309006F43E1 /* DataViewController.m */; };
-		6F9A7D3F1AF20309006F43E1 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F9A7D3D1AF20309006F43E1 /* DeviceViewController.m */; };
+		6FEF94BD1B05812700FC1427 /* libJumaDeviceManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FEF94BC1B05812700FC1427 /* libJumaDeviceManager.a */; };
+		6FEF94C41B05817A00FC1427 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF94BF1B05817A00FC1427 /* ViewController.m */; };
+		6FEF94C51B05817A00FC1427 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF94C11B05817A00FC1427 /* DeviceViewController.m */; };
+		6FEF94C61B05817A00FC1427 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FEF94C31B05817A00FC1427 /* DataViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 		6F862CA81AEF302C000E976F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6F862CAA1AEF302C000E976F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6F862CAB1AEF302C000E976F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6F862CAD1AEF302C000E976F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6F862CAE1AEF302C000E976F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F862CB11AEF302C000E976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F862CB31AEF302C000E976F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6F862CB61AEF302C000E976F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -45,12 +43,14 @@
 		6F862CC11AEF302C000E976F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F862CC21AEF302C000E976F /* JumaSDK_iOS_lite_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumaSDK_iOS_lite_demoTests.m; sourceTree = "<group>"; };
 		6F8CE5AF1AEF742300D0D501 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		6F9A7D371AF202B3006F43E1 /* JumaDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumaDeviceManager.h; sourceTree = "<group>"; };
-		6F9A7D381AF202B3006F43E1 /* libJumaDeviceManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJumaDeviceManager.a; sourceTree = "<group>"; };
-		6F9A7D3A1AF20309006F43E1 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		6F9A7D3B1AF20309006F43E1 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		6F9A7D3C1AF20309006F43E1 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
-		6F9A7D3D1AF20309006F43E1 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		6FEF94BB1B05812700FC1427 /* JumaDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JumaDeviceManager.h; sourceTree = "<group>"; };
+		6FEF94BC1B05812700FC1427 /* libJumaDeviceManager.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJumaDeviceManager.a; sourceTree = "<group>"; };
+		6FEF94BE1B05817A00FC1427 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6FEF94BF1B05817A00FC1427 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6FEF94C01B05817A00FC1427 /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		6FEF94C11B05817A00FC1427 /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		6FEF94C21B05817A00FC1427 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		6FEF94C31B05817A00FC1427 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9A7D391AF202B3006F43E1 /* libJumaDeviceManager.a in Frameworks */,
+				6FEF94BD1B05812700FC1427 /* libJumaDeviceManager.a in Frameworks */,
 				6F8CE5B01AEF742300D0D501 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,12 +98,12 @@
 				6F9A7D361AF202B3006F43E1 /* JumaDeviceManager */,
 				6F862CAA1AEF302C000E976F /* AppDelegate.h */,
 				6F862CAB1AEF302C000E976F /* AppDelegate.m */,
-				6F862CAD1AEF302C000E976F /* ViewController.h */,
-				6F862CAE1AEF302C000E976F /* ViewController.m */,
-				6F9A7D3A1AF20309006F43E1 /* DataViewController.h */,
-				6F9A7D3B1AF20309006F43E1 /* DataViewController.m */,
-				6F9A7D3C1AF20309006F43E1 /* DeviceViewController.h */,
-				6F9A7D3D1AF20309006F43E1 /* DeviceViewController.m */,
+				6FEF94BE1B05817A00FC1427 /* ViewController.h */,
+				6FEF94BF1B05817A00FC1427 /* ViewController.m */,
+				6FEF94C01B05817A00FC1427 /* DeviceViewController.h */,
+				6FEF94C11B05817A00FC1427 /* DeviceViewController.m */,
+				6FEF94C21B05817A00FC1427 /* DataViewController.h */,
+				6FEF94C31B05817A00FC1427 /* DataViewController.m */,
 				6F862CB01AEF302C000E976F /* Main.storyboard */,
 				6F862CB31AEF302C000E976F /* Images.xcassets */,
 				6F862CB51AEF302C000E976F /* LaunchScreen.xib */,
@@ -141,8 +141,8 @@
 		6F9A7D361AF202B3006F43E1 /* JumaDeviceManager */ = {
 			isa = PBXGroup;
 			children = (
-				6F9A7D371AF202B3006F43E1 /* JumaDeviceManager.h */,
-				6F9A7D381AF202B3006F43E1 /* libJumaDeviceManager.a */,
+				6FEF94BB1B05812700FC1427 /* JumaDeviceManager.h */,
+				6FEF94BC1B05812700FC1427 /* libJumaDeviceManager.a */,
 			);
 			path = JumaDeviceManager;
 			sourceTree = "<group>";
@@ -247,11 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9A7D3E1AF20309006F43E1 /* DataViewController.m in Sources */,
-				6F862CAF1AEF302C000E976F /* ViewController.m in Sources */,
+				6FEF94C51B05817A00FC1427 /* DeviceViewController.m in Sources */,
+				6FEF94C41B05817A00FC1427 /* ViewController.m in Sources */,
 				6F862CAC1AEF302C000E976F /* AppDelegate.m in Sources */,
 				6F862CA91AEF302C000E976F /* main.m in Sources */,
-				6F9A7D3F1AF20309006F43E1 /* DeviceViewController.m in Sources */,
+				6FEF94C61B05817A00FC1427 /* DataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +389,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "3e275105-2610-4c5e-93c6-446ebcb7c2a9";
+				PROVISIONING_PROFILE = "6ac74a72-0589-4e17-ab7f-e39c26f0e65f";
 			};
 			name = Debug;
 		};

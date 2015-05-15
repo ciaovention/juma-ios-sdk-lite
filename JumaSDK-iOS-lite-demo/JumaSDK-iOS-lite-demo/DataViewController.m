@@ -64,9 +64,7 @@
     [self.newerField endEditing:YES];
     
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
-    
-    NSString *title = [@"0x" stringByAppendingString:value.uppercaseString];
-    [self.btn setTitle:title forState:UIControlStateNormal];
+    [self.btn setTitle:self.newerField.text forState:UIControlStateNormal];
 }
 
 - (void)alertWithTitle:(NSString *)title {
